@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yqq.performanceoptimisation.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单例内存泄漏"
+       />
+
+    <Button
+        android:onClick="doInnerClassLeak"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="匿名内部类内存泄漏"
+        />
+
+
+    <Button
+        android:onClick="doHandlerLeak"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Handler内存泄漏"
+        />
+
+    <Button
+        android:onClick="doWebviewLeak"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="webview内存泄漏"
+        />
+
+</LinearLayout>
